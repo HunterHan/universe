@@ -1,3 +1,5 @@
+----列编辑模式				shift + alt + a
+
 ----Console中过长的内容输出到文件中		在common选项中指定输出文件。在当前类文件中选择run configurations
 
 ----使用bookmark记录代码点	当你在阅读其他人的代码时，可以把代码重要逻辑以bookmark的形式记录起来，方便日后查询。调出bookmark视图查看刚刚记录的代码点。
