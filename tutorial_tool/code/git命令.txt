@@ -1,3 +1,6 @@
+----取消警告warning: LF will be replaced by CRLF
+git config --global core.autocrlf false
+
 ----设置git编码
 git config --global gui.encoding utf-8
 
