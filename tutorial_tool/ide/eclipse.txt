@@ -1,21 +1,50 @@
+----Console中过长的内容输出到文件中		在common选项中指定输出文件。在当前类文件中选择run configurations
+
+----使用bookmark记录代码点	当你在阅读其他人的代码时，可以把代码重要逻辑以bookmark的形式记录起来，方便日后查询。调出bookmark视图查看刚刚记录的代码点。
+
+-----显示html和xml元素的所有属性	ctrl+shift+逗号
+
+----创建各种类型的文件		Alt + Shift + N 		Ctrl + N
+
+----快速启动tomcat			Ctrl + F7		Ctrl + Alt+ D
+
+----查找文本				当你选中某个文件中的某些字符串时，你可以使用Ctrl + K
+							向下寻找相同的字符串，使用Ctrl + Shfit +ｋ向上寻找相同的字符串。
+
+----调用某个方法的所有类	Ctrl + Shift +G
+
+----Eclipse的面包屑功能		Alt + Shift + B
+最快的拷贝一个类的名字		使用Alt+ Shift + B，调出Eclipse面包屑，点击回车，Eclipse会自动选中类的名字
+
+----重构
+1、修改名字					Ctrl + shift + R
+2、抽取类方法				如果一个方法的代码太长，你想抽取子方法，那么只要选中某块代码，然后使用Alt + Shift 							  +M,就会弹出抽取视图，输入方法名即可。
+
+----变量名和方法之间的跳跃
+							当你想知道当前方法的下一个方法是哪个的时候，只需按下Ctrl + Shift + ↓即可达到目的，这个快捷键同样适用于变量名。
+
+----经典的Quick Access		输入Ctrl + 3,就可以使用Quick Access
+
+----open type				ctrl + shift + T 或者 ctrl + shift + H
+
 ----快速选中某个单词或者某行代码
-把鼠标定位在单词上，那么可以使用Alt + Shift +→,选择osCacheService整个字符串，而无需使用鼠标来操作。
+							把鼠标定位在单词上，那么可以使用Alt + Shift +→,选择osCacheService整个字符串，而无需使用鼠标来操作。
 
 ----动态修改字段的值
-右键 watch
-JSONObject.toJSONString(dst,com.alibaba.fastjson.serializer.SerializerFeature.WriteMapNullValue);
+							右键 watch
+							JSONObject.toJSONString(dst,com.alibaba.fastjson.serializer.SerializerFeature.WriteMapNullValue);
 
 ----Eclipse 高亮显示选中的相同变量
 
-1.选择:windows-> preferences->java->Editor->Mark Occurences
-选择最上的复选框，下面的就有很多了。其中的Local variables就是变量的高亮显示。
+							1.选择:windows-> preferences->java->Editor->Mark Occurences
+							选择最上的复选框，下面的就有很多了。其中的Local variables就是变量的高亮显示。
 
-2.Toggle Mark Occurrences (Alt + Shift + 0)，这个按钮没有按下，在工具栏的小黄颜色的笔 的形状的图标
+							2.Toggle Mark Occurrences (Alt + Shift + 0)，这个按钮没有按下，在工具栏的小黄颜色的笔 的形状的图标
 
-3.改变其颜色：
-选择:windows-> preferences->java->Editor->Mark Occurences->第一行有个“Annotations”点击进入，显示出列表，找到 Occurrence annotation 右边选择Color即可。
+							3.改变其颜色：
+							选择:windows-> preferences->java->Editor->Mark Occurences->第一行有个“Annotations”点击进入，显示出列表，找到 Occurrence annotation 右边选择Color即可。
 
 ----不格式化eclipse注释
-Windows -> Preferces -> java -> Code Style –> Formatter  或者搜索Formatter
-编辑Edit  进入Comments选项卡
-取消勾选“Enable Javadoc  comment formatting”.
+							Windows -> Preferces -> java -> Code Style –> Formatter  或者搜索Formatter
+							编辑Edit  进入Comments选项卡
+							取消勾选“Enable Javadoc  comment formatting”.
