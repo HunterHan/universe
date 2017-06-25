@@ -1,9 +1,5 @@
 package com.laiwu.algorithm.producerconsumer;
 
-/**
- * 生产者类Producer继承线程类Thread
- * 
- */
 public class Producer extends Thread {
   // 每次生产的产品数量
   private int num;

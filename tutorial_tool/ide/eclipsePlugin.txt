@@ -1,2 +1,2 @@
 ----FindBugs
-FindBugs可以帮你找到Java代码中的bug，它使用Lesser GNU Public License的自由软件许可。
+FindBugs可以帮你找到Java代码中的bug
