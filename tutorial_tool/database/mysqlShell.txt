@@ -1,0 +1,3 @@
+----导出导入
+mysqldump -uroot -p risk_control_cloud_v1 --lock-all-tables > /home/hongtao/sql/v1.sql
+source /home/hongtao/sql/v1.sql

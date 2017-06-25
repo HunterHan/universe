@@ -1,0 +1,62 @@
+----密码
+
+在MySQL的目录文件下会发现initialize后出现的名为data的文件夹，其中有一个以.err为后缀的文件，以记事本格式打开，查找‘password’，会发现有一句A temporary password ...... ,粗通英语就可以看懂，意为“临时密码为：”，冒号之后的即是初次登录的密码（很不规范，可能包括*或者分号，也都是password的一部分，
+把密码复制粘贴到命令行那里敲下回车就成功登录了，之后可以修改密码
+SET PASSWORD = PASSWORD('1234');
+ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+flush privileges;
+
+----mycli
+pip install mycli
+brew update &&brew install mycli
+mycli -h locahost -u root
+
+----windows安装MySQL
+
+1、下载 zip包
+2、配置文件my.ini
+
+[mysql]
+
+# 设置mysql客户端默认字符集
+
+default-character-set=utf8
+
+[mysqld]
+
+#设置3306端口
+
+port = 3306
+
+# 设置mysql的安装目录
+
+basedir=D:\mysql\mysql-5.6.17-winx64
+
+# 设置mysql数据库的数据的存放目录
+
+datadir=D:\mysql\mysql-5.6.17-winx64\data
+
+# 允许最大连接数
+
+max_connections=200
+
+# 服务端使用的字符集默认为8比特编码的latin1字符集
+
+character-set-server=utf8
+
+# 创建新表时将使用的默认存储引擎
+
+default-storage-engine=INNODB
+
+(管理员身份)
+3、新建并且初始化data目录
+D:\data\app\mysql-5.7.18-winx64\bin>mysqld  --initialize
+
+4、安装MySQL服务
+D:\data\app\mysql-5.7.18-winx64\bin>mysqld --install
+Service successfully installed.
+
+5、启动MySQL服务
+D:\data\app\mysql-5.7.18-winx64\bin>net start mysql
+MySQL 服务正在启动 .
+MySQL 服务已经启动成功。
