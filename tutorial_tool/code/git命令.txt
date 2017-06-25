@@ -1,0 +1,66 @@
+----分支branch操作
+1、创建本地branch：				git branch branch_name
+2、本地切换branch：				git checkout branch_name
+3、直接创建并切换本地分支：		git checkout -b branch_name
+4、创建远程分支：				git push origin branch_name 将本地某个brach在推送到远程，即在远程创建一个分支
+5、获取远程分支：				git checkout -b branch_name origin/branch_name 从远程获取某个branch到本地，并将该branch在本地远程进行关联
+6、查看分支：					git branch -r 查看远程分支
+								git branch 查看本地分支
+7、删除分支：					git branch -d branch_name 删除本地分支
+								git push origin :branch_name 删除远程branch
+
+----标签tag操作
+1、在本地切换到需要tag的分支 	git checkout branch_name;
+2、本地打tag：					git tag -a tagname -m "上线版本"
+3、将本地tag推送到服务器：		git push origin tagname
+4、获取远程tag：				git fetch origin tag tagname
+5、本地切换到tag工作：			git checkout tagname
+6、查看tag信息：				git show tagname
+7、删除tag：					git tag -d tagname
+
+----git log查看
+git log --author=author_name
+git log --author=author_name --stat
+git log --oneline
+
+----git回滚
+回滚指定提交					git revert 1ddcdcda02b4a48a2527e835ec4c15dc94d5e7c4
+
+----查看历史差异
+查看具体单次提交				gitk 1ddcdcda02b4a48a2527e835ec4c15dc94d5e7c4
+
+----将一个分支的某个提交复制到其他分支
+1、获取当次提交的key
+								git commit -am "修复获取一度联系人bug"
+								[develop_slave_v2 1f047e4] 修复获取一度联系人bug
+2、切换到目标分支				git checkout 其他分支
+3、抓取当次提交					git cherry-pick 1f047e4
+
+----安装git
+# centos
+sudo yum install git
+# ubuntu
+sudo apt-get install git
+
+----配置git环境
+# 提交代码的log里面会显示提交者的信息
+git config --global user.name xxxxx
+git config --global user.email xxxxx@rrx360.com
+
+----生成本地ssh 密钥
+1）查看本地是否已经存在ssh密钥： cd ~/.ssh
+   如果没有密钥则不会有此文件夹，有则备份后删除。
+2）生成密钥： ssh-keygen -t rsa -C "xxxxxx@rrx360.com" （ps：**一定是你的工作邮箱，勿错！**）
+   按三次回车键，密码为空，打印一段文字后，生成两个文件：id_rsa和id_rsa.pub。
+
+----配置Host、端口号
+编辑~/.ssh/config文件，添加以下几行：
+Host 10.10.159.14
+User git
+Port 65360
+
+----上传权限
+1. 登录http://10.10.159.14/
+2. 点击右上的profile settings
+3. 点击左边栏的ssh keys，添加自己开发机上的public key
+4. 在开发机上即可通过git clone <上面的项目地址>进行代码协作开发
