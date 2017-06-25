@@ -1,6 +1,7 @@
 package com.laiwu.algorithm.producerconsumer;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -17,15 +18,15 @@ import java.util.concurrent.locks.ReentrantLock;
  *         只需要更新仓库类Storage的代码即可，生产者Producer、消费者Consumer、测试类Test的代码均不需要进行任何更改。
  *         这样我们就知道为神马我要在Storage类中定义public void produce(int num);和public void
  *         consume(int num);方法，并在生产者类Producer和消费者类Consumer中调用Storage类中的实现了吧。
- *         将可能发生的变化集中到一个类中
- *         ，不影响原有的构架设计，同时无需修改其他业务层代码。无意之中，我们好像使用了某种设计模式，具体是啥我忘记了，啊哈哈，等我想起来再告诉大家~
+ *         将可能发生的变化集中到一个类中，不影响原有的构架设计，同时无需修改其他业务层代码。
+ *         无意之中，我们好像使用了某种设计模式，具体是啥我忘记了，啊哈哈，等我想起来再告诉大家~
  */
 public class Storage {
   // 仓库最大存储量
   private final int MAX_SIZE = 100;
 
-  // 仓库存储的载体
-  private LinkedList<Object> list = new LinkedList<Object>();
+  // 真正的仓库存储载体
+  private List<Object> list = new LinkedList<Object>();
 
   // 锁
   private final Lock lock = new ReentrantLock();
@@ -85,7 +86,7 @@ public class Storage {
 
     // 消费条件满足情况下，消费num个产品
     for (int i = 1; i <= num; ++i) {
-      list.remove();
+      list.remove(i);
     }
 
     System.out.println("【已经消费产品数】:" + num + "/t【现仓储量为】:" + list.size());
@@ -103,11 +104,11 @@ public class Storage {
     return MAX_SIZE;
   }
 
-  public LinkedList<Object> getList() {
+  public List<Object> getList() {
     return list;
   }
 
-  public void setList(LinkedList<Object> list) {
+  public void setList(List<Object> list) {
     this.list = list;
   }
 }
