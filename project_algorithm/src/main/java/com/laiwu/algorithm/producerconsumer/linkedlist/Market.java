@@ -1,6 +1,6 @@
-package com.laiwu.algorithm.producerconsumer;
+package com.laiwu.algorithm.producerconsumer.linkedlist;
 
-public class FactoryWorker {
+public class Market {
   public static void main(String[] args) {
     // 仓库
     Storage storage = new Storage();
