@@ -1,0 +1,33 @@
+FSViewer				图像查看器
+edrawmax				流程图工具
+PotPlayer				音视频播放器
+sogou_pinyin_zhihui		搜狗拼音智慧版
+eagleget				嗅探工具
+mysql-workbench			MySQL客户端
+xyplorer				文件管理器
+picpick					截图工具
+Meld					文件及目录对比工具
+DeskScapes				桌面主题
+freelaunchbar			快速启动增强
+StartIsBackPlusPlus		桌面增强
+atrecply				录屏
+Remove Shortcut Icon	溢出快捷图标箭头
+studio-3t				mongo客户端
+Git						git客户端
+gradle					代码构建工具
+Sublime Text			文本编辑
+VMware workstation		虚拟机
+Total-Uninstall			完全卸载
+WDC						智能磁盘清理
+Listary					快速启动工具
+calendar				日历
+FileZilla				文件传输
+BCompare				文本比较
+Everything				全局搜索
+pcmaster				系统
+microKMS				破解
+npp						文本编辑
+Youdaodict				词典
+7z						压缩
+lantern					蓝灯
+chrome					浏览器
