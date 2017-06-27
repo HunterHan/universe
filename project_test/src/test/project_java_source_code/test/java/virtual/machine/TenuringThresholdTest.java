@@ -1,4 +1,4 @@
-package jvm;
+package test.java.virtual.machine;
 
 import org.junit.Test;
 

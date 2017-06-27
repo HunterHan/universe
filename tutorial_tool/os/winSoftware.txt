@@ -22,7 +22,7 @@ WDC						智能磁盘清理
 Listary					快速启动工具
 calendar				日历
 FileZilla				文件传输
-BCompare				文本比较
+BCompare、WinMerge		文本比较
 Everything				全局搜索
 pcmaster				系统
 microKMS				破解

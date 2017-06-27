@@ -5,6 +5,9 @@
 		<dependent-module deploy-path="../" handle="module:/resource/project_java_source_code/project_java_source_code">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/project_common/project_common">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="../" handle="module:/resource/project_algorithm/project_algorithm">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>

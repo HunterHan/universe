@@ -1,4 +1,4 @@
-package jvm;
+package test.java.virtual.machine;
 
 import java.io.BufferedReader;
 import java.io.IOException;

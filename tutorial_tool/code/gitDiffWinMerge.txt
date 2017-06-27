@@ -1,0 +1,29 @@
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[gui]
+	encoding = utf-8
+
+#使用beyond compare来查看文件差异
+[diff]
+#对比工具名称,必须与difftool项里的名称保持一致
+tool = WinMerge
+[difftool "WinMerge"]
+#beyond compare路径和调用命令
+#$REMOTE 表示commit之后的文件
+#LOCAL 表示commit到git的文件
+cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$REMOTE\" \"$LOCAL\""
+#合并分支
+[merge]
+#对比工具名称,必须与mergetool项里的名称保持一致
+tool = WinMerge
+[mergetool]
+prompt = false
+[mergetool "WinMerge"]
+#beyond compare路径和调用命令
+cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[user]
+	email = 784622876@qq.com
+	name = hanhongtao
+[core]
+	autocrlf = false

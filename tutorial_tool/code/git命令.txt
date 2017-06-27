@@ -1,3 +1,8 @@
+----Git集成本地Diff工具
+1、beyond compare	参考同路径下文件	gitDiffBc.txt
+2、WinMerge			参考同路径下文件	gitDiffWinMerge.txt
+使用时，通过命令git difftool
+
 ----取消警告warning: LF will be replaced by CRLF
 git config --global core.autocrlf false
 

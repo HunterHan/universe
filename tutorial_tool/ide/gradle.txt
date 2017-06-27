@@ -1,3 +1,16 @@
+常用教程:http://blog.javachen.com/2015/01/07/build-multi-module-project-with-gradle.html
+
+----导出jar包依赖
+gradle dependencies > depend.log
+
+----主模块、子模块
+---->主模块setting.gradle
+rootProject.name = 'universe'
+include 'project_algorithm'
+include 'project_java_source_code'
+include 'project_test'
+include 'project_common'
+---->主模块build.gradle
 task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
@@ -84,3 +97,22 @@ subprojects {
         ) 
     }
 }
+
+---->子模块build.gradle
+apply plugin:"java"
+
+dependencies {
+
+	// 依赖 模块
+    compile project(":project_java_source_code")
+    compile project(":project_algorithm")
+    compile project(":project_common")
+    
+    // 通用依赖
+    // compile(
+    
+    // )
+    
+}
+
+
