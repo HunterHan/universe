@@ -19,7 +19,7 @@ Sublime Text			文本编辑
 VMware workstation		虚拟机
 Total-Uninstall			完全卸载
 WDC						智能磁盘清理
-Listary					快速启动工具
+Listary、Wox				快速启动工具
 calendar				日历
 FileZilla				文件传输
 BCompare、WinMerge		文本比较
@@ -31,3 +31,4 @@ Youdaodict				词典
 7z						压缩
 lantern					蓝灯
 chrome					浏览器
+Ditto					剪贴增强工具

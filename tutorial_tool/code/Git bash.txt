@@ -1,0 +1,2 @@
+----连接MySQL命令
+winpty mysql -uroot -p 
