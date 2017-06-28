@@ -1,3 +1,6 @@
+----字体
+选择微软雅黑或者Consolas
+
 ----列编辑模式				shift + alt + a
 
 ----Console中过长的内容输出到文件中		在common选项中指定输出文件。在当前类文件中选择run configurations

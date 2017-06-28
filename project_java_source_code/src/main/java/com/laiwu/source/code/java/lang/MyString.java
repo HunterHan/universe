@@ -1,7 +1,5 @@
 package com.laiwu.source.code.java.lang;
 
-import java.util.Arrays;
-
 import com.laiwu.common.util.date.SimpleDateFormatUtil;
 
 /**
