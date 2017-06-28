@@ -1,4 +1,27 @@
-mac 使用手册
+chrome						浏览器
+Wunderlist for chrome 		待办事项
+HostAdmin App 				Host管理工具
+iTerm						命令行终端
+Studio 3T、mongobooster		mongo客户端
+SecureCRT					远程连接
+Sublime 					文本编辑
+Paw							post工具
+EdrawMax					流程图
+BetterZip 					压缩
+CleanMyMac					系统
+Cornerstone 				svn工具
+DataGrip 					mysql客户端
+FileZilla 					文件传输
+JD-GUI						java源码解析
+腾讯截图						截图
+lantern 					翻墙
+movist 						音视频
+pyCharm						python IDE
+Recordee 					录音工具
+Tower 						git客户端
+Xmind 						思维导图
+Folx 						下载
+TotalFinder 				Finder替代	重启mac，command + R，进入terminal，输入csrutil enable --without debug
 
 office工具	Microsoft office 2016	http://bbs.feng.com/read-htm-tid-11067610.html
 

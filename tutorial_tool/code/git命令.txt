@@ -1,3 +1,6 @@
+----取消某个文件的修改，还原
+git status
+git checkout .../.../.../xxx.java
 
 ----Git集成本地Diff工具
 1、beyond compare	参考同路径下文件	gitDiffBc.txt
