@@ -30,4 +30,12 @@ public class MySimpleDateFormat {
     String nowStr = formetter.format(now);
     return nowStr;
   }
+
+  /**
+   * 计算时间差
+   */
+  public static long getDistance(long start) {
+    Date end = new Date();
+    return end.getTime() - start;
+  }
 }

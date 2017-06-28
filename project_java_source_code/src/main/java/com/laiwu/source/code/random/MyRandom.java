@@ -1,6 +1,6 @@
 package com.laiwu.source.code.random;
 
-public class RandomUsage {
+public class MyRandom {
 
   public static final String[] data = { "tom", "peter", "lily", "jim", "han" };
 

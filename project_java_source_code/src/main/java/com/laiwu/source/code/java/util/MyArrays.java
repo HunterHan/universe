@@ -5,13 +5,13 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class ArraysUsage {
+public class MyArrays {
 
   @Test
   public void copyOf() {
     String[] names = { "tom", "jack", "peter" };
     String[] dst = Arrays.copyOf(names, names.length);
-    ArraysUsage.printArray(dst);
+    MyArrays.printArray(dst);
   }
 
   @Test

@@ -1,4 +1,4 @@
-package com.laiwu.source.code.thread;
+package com.laiwu.source.code.java.lang;
 
 /**
  * 线程的join的含义就是将几个并行线程的线程合并为一个单线程执行
@@ -6,7 +6,7 @@ package com.laiwu.source.code.thread;
  * 应用场景 是当一个线程必须等待另一个线程执行完毕才能执行时可以使用 join 方法
  * 
  */
-public class Join {
+public class MyThreadJoin {
   public static void main(String[] args) throws InterruptedException {
     Thread thread = new MyThread1();
     thread.start();

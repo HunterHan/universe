@@ -1,6 +1,6 @@
-package com.laiwu.source.code.thread;
+package com.laiwu.source.code.java.lang;
 
-public class DeadLock implements Runnable {
+public class MyThreadDeadLock implements Runnable {
 	/**
 	 * 当两个线程以相反的顺序持有两把锁时，就有可能产生死锁现象
 	 */
@@ -9,8 +9,8 @@ public class DeadLock implements Runnable {
 	public static Object o2 = new Object();
 
 	public static void main(String[] args) {
-		DeadLock td1 = new DeadLock();
-		DeadLock td2 = new DeadLock();
+		MyThreadDeadLock td1 = new MyThreadDeadLock();
+		MyThreadDeadLock td2 = new MyThreadDeadLock();
 		td1.flag = 1;
 		td2.flag = 0;
 		Thread t1 = new Thread(td1);

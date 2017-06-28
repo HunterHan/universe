@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
 	<wb-module deploy-name="project_test">
-        <wb-resource deploy-path="/" source-path="/src/test/project_algorithm"/>
-        <wb-resource deploy-path="/" source-path="/src/test/project_java_source_code"/>
 		<dependent-module deploy-path="../" handle="module:/resource/project_java_source_code/project_java_source_code">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>

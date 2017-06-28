@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 import org.junit.Test;
 
-public class CollectionsUsage {
+public class MyCollections {
 
   static LinkedList<Integer> linkedList = new LinkedList<Integer>();
   static {

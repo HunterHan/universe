@@ -2,5 +2,9 @@ apply plugin:"java"
 
 // 还可以定义其他配置，这里直接继承父模块中的配置
 dependencies {
-    
+
+	compile(
+    	
+    	"org.quartz-scheduler:quartz:2.2.1"
+    )
 }
