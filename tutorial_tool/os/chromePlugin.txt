@@ -1,0 +1,31 @@
+
+插件
+
+instapaper				网页存档
+AdBlock					广告拦截
+JSON-handle				json格式化
+档案娘助手				微博管理
+天气+万年历				天气+万年历
+购物党全网自动比价工具		比价
+Holmes					地址栏提示已存书签
+Bookmark Checker		检查书签是否存在死书签
+chrono下载管理器			替代自带
+Octotree				Github树状显示
+Clear Cache				清除缓存
+Web前端助手				在线工具
+一键管理所有扩展			插件管理工具
+Chromium wheel Smooth Scroller	平滑滚动
+眼不见心不烦				新浪微博工具
+Momentom				新标签美观简易
+空格之神					自动添加空格
+Linkclump				右键全选打开链接
+
+
+
+应用
+
+Postman					post工具
+Host Admin APP			host管理
+Wunderlist				日程管理
+XML, JSON Viewer		json格式化
+
