@@ -59,9 +59,9 @@ git log --oneline
 
 ----将一个分支的某个提交复制到其他分支
 1、获取当次提交的key
-								git commit -am "修复获取一度联系人bug"
+								git add . && git commit -am "修复获取一度联系人bug"
 								[develop_slave_v2 1f047e4] 修复获取一度联系人bug
-2、切换到目标分支				git checkout 其他分支
+2、切换到目标分支					git checkout 其他分支
 3、抓取当次提交					git cherry-pick 1f047e4
 
 ----安装git
