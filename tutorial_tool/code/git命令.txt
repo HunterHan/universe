@@ -14,10 +14,10 @@ git checkout .../.../.../xxx.java
 使用时，通过命令git difftool
 
 ----git merge提交步骤
+git checkout master
 git fetch --all
-git add .
-git commit -am "xxx"
-git rebase origin/develop_salve_v2
+git add . && git commit -am "xxx"
+git rebase origin/develop_salve_v2(不要执行git merge操作)
 git push
 
 ----取消警告warning: LF will be replaced by CRLF
