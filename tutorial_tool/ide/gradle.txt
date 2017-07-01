@@ -77,7 +77,7 @@ subprojects {
     }
 
     repositories {
-       //maven {url 'http://10.10.159.211:8080/nexus/content/groups/public'}
+       //maven {url 'http://xx.xx.xxx.xxx:xxxx/nexus/content/groups/public'}
        //mavenCentral()
        jcenter()
     }

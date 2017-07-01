@@ -5,7 +5,7 @@ git commit
 git push --set-upstream origin universe_develop
 
 ----取消某个文件的修改，还原
-git status
+git status -sb
 git checkout .../.../.../xxx.java
 
 ----Git集成本地Diff工具
@@ -73,22 +73,56 @@ sudo apt-get install git
 ----配置git环境
 # 提交代码的log里面会显示提交者的信息
 git config --global user.name xxxxx
-git config --global user.email xxxxx@rrx360.com
+git config --global user.email xxxxx@xxx.com
 
 ----生成本地ssh 密钥
 1）查看本地是否已经存在ssh密钥： cd ~/.ssh
    如果没有密钥则不会有此文件夹，有则备份后删除。
-2）生成密钥： ssh-keygen -t rsa -C "xxxxxx@rrx360.com" （ps：**一定是你的工作邮箱，勿错！**）
+2）生成密钥： ssh-keygen -t rsa -C "xxxxxx@xxx.com" （ps：**一定是你的工作邮箱，勿错！**）
    按三次回车键，密码为空，打印一段文字后，生成两个文件：id_rsa和id_rsa.pub。
 
 ----配置Host、端口号
 编辑~/.ssh/config文件，添加以下几行：
-Host 10.10.159.14
+Host xx.xx.xx.xx
 User git
 Port 65360
 
 ----上传权限
-1. 登录http://10.10.159.14/
+1. 登录http://xx.xx.xx.xx/
 2. 点击右上的profile settings
 3. 点击左边栏的ssh keys，添加自己开发机上的public key
 4. 在开发机上即可通过git clone <上面的项目地址>进行代码协作开发
+
+----.gitconfig备份
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[gui]
+	encoding = utf-8
+
+#使用beyond compare来查看文件差异
+[diff]
+#对比工具名称,必须与difftool项里的名称保持一致
+tool = WinMerge
+[difftool "WinMerge"]
+#beyond compare路径和调用命令
+#$REMOTE 表示commit之后的文件
+#LOCAL 表示commit到git的文件
+cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$REMOTE\" \"$LOCAL\""
+#合并分支
+[merge]
+#对比工具名称,必须与mergetool项里的名称保持一致
+tool = WinMerge
+[mergetool]
+prompt = false
+[mergetool "WinMerge"]
+#beyond compare路径和调用命令
+cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[user]
+	email = 784622876@qq.com
+	name = hanhongtao
+[core]
+	autocrlf = false
+# git 命令别名
+[alias]
+	log1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
