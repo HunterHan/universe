@@ -125,4 +125,28 @@ dependencies {
     
 }
 
+----gitignore文件，项目创建初期定义
+主模块
+
+$ cat .gitignore
+/.gradle/
+/.project
+/.settings/
+.DS_Store
+.classpath
+*node_modules/
+*js.map
+/bin/
+/build/
+/.idea/
+
+子模块
+
+$ cat project_test/.gitignore
+/.gradle/
+/.settings/
+/bin/
+/build/
+/.project
+
 

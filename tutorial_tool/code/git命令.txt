@@ -1,3 +1,10 @@
+----未在项目初期加入合适的gitignore文件的处理办法
+git rm -r --cached .
+git add .		
+git commit 		
+git push --set-upstream origin universe_develop
+
+
 ----取消某个文件的修改，还原
 git status
 git checkout .../.../.../xxx.java
