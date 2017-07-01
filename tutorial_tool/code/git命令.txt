@@ -93,7 +93,7 @@ Port 65360
 3. 点击左边栏的ssh keys，添加自己开发机上的public key
 4. 在开发机上即可通过git clone <上面的项目地址>进行代码协作开发
 
-----.gitconfig备份
+----.gitconfig全量备份
 [i18n]
 	commitencoding = utf-8
 	logoutputencoding = utf-8
@@ -126,3 +126,4 @@ cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\" \"
 # git 命令别名
 [alias]
 	log1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	status1 = status -sb
