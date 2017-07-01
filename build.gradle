@@ -7,9 +7,9 @@ subprojects {
     apply plugin: 'eclipse-wtp' 
     apply plugin: 'maven-publish'
     
-	apply plugin: 'findbugs'
-	apply plugin: 'pmd'
-	apply plugin: 'checkstyle'
+	// apply plugin: 'findbugs'
+	// apply plugin: 'pmd'
+	// apply plugin: 'checkstyle'
 	
     version = '1.0'
    

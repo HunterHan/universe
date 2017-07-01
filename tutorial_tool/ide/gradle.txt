@@ -1,7 +1,17 @@
-常用教程:http://blog.javachen.com/2015/01/07/build-multi-module-project-with-gradle.html
-
-----导出jar包依赖
+----常用命令
+gradle cleanEclipse eclipse
+gradle clean build -xtest
 gradle dependencies > depend.log
+
+----默认下载路径
+windows C:\Users \ 计算机名. gradle\wrapper\dists
+LInux /home / 计算机名 /.gradle\wrapper\dists
+修改到非系统盘
+将 C:\Users\tower\.gradle 的默认目录复制到 d:/gradle_repo/.gradle，然后设置系统环境变量：
+
+GRADLE_USER_HOME=d:/gradle_repo/.gradle
+
+----常用教程:http://blog.javachen.com/2015/01/07/build-multi-module-project-with-gradle.html
 
 ----主模块、子模块
 ---->主模块setting.gradle
