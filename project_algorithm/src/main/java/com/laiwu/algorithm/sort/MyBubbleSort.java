@@ -10,9 +10,8 @@ import java.util.Arrays;
  * 稳 定 性：稳定
  * 内部排序 (在排序过程中数据元素完全在内存)
  * 
- * @source from https://github.com/githubofrico/DataStructure.git
  */
-public class MyBubble {
+public class MyBubbleSort {
   /**     
    * @description 朴素冒泡排序 (共进行 n-1 次比较)
    */
@@ -61,4 +60,5 @@ public class MyBubble {
     }
     return target;
   }
+
 }
