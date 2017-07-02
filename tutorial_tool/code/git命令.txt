@@ -1,3 +1,14 @@
+----按照合并数量给贡献者排序
+git shortlog -sn --no-merges
+
+----查看某文件的每一行代码的作者，最新commit和提交时间
+git blame xxx
+git blame -L 40,60 foo
+git blame -L 40,+21 foo
+git blame -L '/^sub hello {/,/^}$/' foo
+git blame v2.6.18.. -- foo
+git blame --since=3.weeks -- foo
+
 ----未在项目初期加入合适的gitignore文件的处理办法
 git rm -r --cached .
 git add .		
@@ -124,6 +135,6 @@ cmd = "\"D:/data/app/WinMerge/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\" \"
 [core]
 	autocrlf = false
 # git 命令别名
-[alias]
-	log1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	log1 = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'
+	log2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	status1 = status -sb
