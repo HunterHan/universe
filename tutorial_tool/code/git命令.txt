@@ -1,3 +1,9 @@
+----重置暂存区的代码
+git reset HEAD file
+git reset 	所做的事情就是修改 master 分支对 commit 对象的引用。
+git reset 	有很多参数，区别在于对仓库文件状态的处理，
+			共同点都是修改 .git/refs/heads 目录下，当前分支对应的引用文件
+
 ----按照合并数量给贡献者排序
 git shortlog -sn --no-merges
 
