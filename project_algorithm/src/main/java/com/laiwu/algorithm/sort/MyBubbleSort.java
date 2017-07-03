@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Title: 交换排序中的冒泡排序 ，一般情形下指的是优化后的冒泡排序，最多进行 n-1 次比较
  * Description: 因为越大的元素会经由交换慢慢 "浮" 到数列的顶端 (最后位置)，最大的数最后才确定下来，所以称为冒泡排序
- * 时间复杂度：最好情形 O(n)，平均情形 O(n^2)，最差情形 O(n^2) 
+ * 时间复杂度：，平均情形 O(n^2), 最好情形 O(n), 最差情形 O(n^2) 
  * 空间复杂度：O(1) 
  * 稳 定 性：稳定
  * 内部排序 (在排序过程中数据元素完全在内存)
@@ -25,9 +25,10 @@ public class MyBubbleSort {
             int temp = target[j];
             target[j] = target[j - 1];
             target[j - 1] = temp;
+            System.out.println("\ninner - " + Arrays.toString(target));
           }
         }
-        System.out.println(Arrays.toString(target));
+        System.out.println("\n\t" + Arrays.toString(target));
       }
     }
     return target;
@@ -35,6 +36,8 @@ public class MyBubbleSort {
 
   /**     
    * @description 优化冒泡排序
+   * 
+   * 判断上次是否发生过元素交换，未发生表示数组已有序，直接返回
    */
   public static int[] optimizeBubbleSort(int[] target) {
     int n = target.length;
@@ -49,9 +52,10 @@ public class MyBubbleSort {
             target[j] = target[j - 1];
             target[j - 1] = temp;
             isExchanged = true;
+            System.out.println("\ninner - " + Arrays.toString(target));
           }
         }
-        System.out.println(Arrays.toString(target));
+        System.out.println("\n\t" + Arrays.toString(target));
         // 未发生元素交换，则表示数组已有序，直接返回
         if (!isExchanged) {
           return target;

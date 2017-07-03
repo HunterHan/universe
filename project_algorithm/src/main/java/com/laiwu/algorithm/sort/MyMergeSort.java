@@ -11,7 +11,7 @@ import java.util.Arrays;
  * 归并排序的主要问题是：需要一个与原待排序数组一样大的辅助数组空间
  * 
  * 归并排序不依赖于原始序列，因此其最好情形、平均情形和最差情形时间复杂度都一样
- * 时间复杂度：最好情形 O(n)，平均情形 O(n^2)，最差情形 O(n^2) 
+ * 时间复杂度：最好情形 O(nlogn)，平均情形 O(nlogn)，最差情形 O(n^2) 
  * 空间复杂度：O(n) 
  * 稳 定 性：稳定
  * 内部排序 (在排序过程中数据元素完全在内存)
@@ -99,9 +99,9 @@ public class MyMergeSort {
       rightTarget[i - middleIndex] = target[i];
     }
 
-    System.out.println(Arrays.toString(leftTarget) + Arrays.toString(rightTarget));
-
+    System.out.println(Arrays.toString(leftTarget));
     iterateMergeSort(leftTarget);
+    System.out.println(Arrays.toString(rightTarget));
     iterateMergeSort(rightTarget);
 
     iterateMergeSortTerminitor(leftTarget, rightTarget, target);

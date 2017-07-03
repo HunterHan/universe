@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**        
  * Title: 插入排序中的『直接插入排序 』，依赖于初始序列  
  * Description: 在有序序列中不断插入新的记录以达到扩大有序区到整个数组的目的
- *        时间复杂度：最好情形 O(n)，平均情形 O(n^2)，最差情形 O(n^2)
+ *        时间复杂度：平均情形 O(n^2)，最好情形 O(n)，最差情形 O(n^2)
  *        空间复杂度：O(1)
  *        稳    定   性：稳定
  *        内部排序 (在排序过程中数据元素完全在内存)
@@ -22,9 +22,11 @@ public class MyInsertSort {
             target[j] = target[j - 1];
             target[j - 1] = temp;
           }
+          System.out.println("\ninner - " + Arrays.toString(target));
         }
 
-        System.out.println(Arrays.toString(target));
+        System.out.println("\n\t" + Arrays.toString(target));
+
       }
     }
     return target;
