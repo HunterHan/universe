@@ -1,0 +1,17 @@
+mongo在windows平台的安装步骤
+1. 创建数据目录
+MongoDB将数据目录存储在 db 目录下。但是这个数据目录不会主动创建，我们在安装完成后需要创建它。请注意，数据目录应该放在根目录下（(如： C:\ 或者 D:\ 等 )。
+在本教程中，我们已经在C：盘 安装了 mongodb，现在让我们创建一个data的目录然后在data目录里创建db目录。
+
+2. 命令行下运行 MongoDB 服务器
+为了从命令提示符下运行MongoDB服务器，你必须从MongoDB目录的bin目录中执行mongod.exe文件。
+mongod.exe --dbpath c:\data\db
+
+3. 将MongoDB服务器作为Windows服务运行
+请注意，你必须有管理权限才能运行下面的命令。执行以下命令将MongoDB服务器作为Windows服务运行：
+mongod.exe --bind_ip yourIPadress --logpath "C:\data\dbConf\mongodb.log" --logappend --dbpath "C:\data\db" --port yourPortNumber --serviceName "YourServiceName" --serviceDisplayName "YourServiceName" --install
+
+mongod.exe --logpath "D:\data\log\mongodb.log" --logappend --dbpath "D:\data\db" --serviceName "A_Own_mongod" --serviceDisplayName "A_Own_mongod" --install
+
+4. 配置环境变量
+
