@@ -9,3 +9,5 @@
 /build/
 /.idea/
 /out/
+/catalina.base_IS_UNDEFINED/
+*.iml
