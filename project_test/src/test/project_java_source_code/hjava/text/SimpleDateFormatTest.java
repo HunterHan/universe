@@ -1,4 +1,4 @@
-package test.java.text;
+package hjava.text;
 
 import org.junit.Test;
 

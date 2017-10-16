@@ -1,4 +1,4 @@
-package test.java.lang;
+package hjava.lang;
 
 import com.laiwu.source.code.java.lang.MyThread;
 

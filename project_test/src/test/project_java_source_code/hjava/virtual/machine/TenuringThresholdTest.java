@@ -1,4 +1,4 @@
-package test.java.virtual.machine;
+package hjava.virtual.machine;
 
 import org.junit.Test;
 

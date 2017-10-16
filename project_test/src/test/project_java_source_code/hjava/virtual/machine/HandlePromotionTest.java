@@ -1,4 +1,4 @@
-package test.java.virtual.machine;
+package hjava.virtual.machine;
 
 import com.laiwu.source.code.java.virtual.machine.t2.HandlePromotion;
 

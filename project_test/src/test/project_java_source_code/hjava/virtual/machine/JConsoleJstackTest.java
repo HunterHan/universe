@@ -1,4 +1,4 @@
-package test.java.virtual.machine;
+package hjava.virtual.machine;
 
 import java.io.BufferedReader;
 import java.io.IOException;
