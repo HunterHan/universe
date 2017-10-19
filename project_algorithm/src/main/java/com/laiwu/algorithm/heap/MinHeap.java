@@ -19,7 +19,7 @@ public class MinHeap {
 	 * @description 构建一个大小为size的最小堆
 	 * @author rico
 	 * @created 2017年5月24日 下午8:19:46
-	 * @param size
+	 * @param maxSize
 	 */
 	public MinHeap(int maxSize) {
 		heap = new int[maxSize];
