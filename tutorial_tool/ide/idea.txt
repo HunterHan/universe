@@ -1,0 +1,2 @@
+idea多项目、多窗口打开
+-先打开一个项目，打开Preferences，点击Appearance & Settings, 点击System Settings, 找到Project Opening，打钩Open project in new window
