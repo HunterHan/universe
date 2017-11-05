@@ -3,7 +3,7 @@ package com.laiwu.algorithm.graph;
 /**
  * @description AMWGraph类的测试类
  */
-public class TestAMWGraph {
+public class AMWGraphTest {
   public static void main(String args[]) {
     int n = 4, e = 4;//分别代表结点个数和边的数目
     String labels[] = {"V1", "V2", "V3", "V4"};//结点的标识
