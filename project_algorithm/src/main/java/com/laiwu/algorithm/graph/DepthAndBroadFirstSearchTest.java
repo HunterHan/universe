@@ -4,10 +4,10 @@ public class DepthAndBroadFirstSearchTest {
 
   public static void main(String args[]) {
     int n = 8, e = 9;//分别代表结点个数和边的数目
-    String labels[] = {"1", "2", "3", "4", "5", "6", "7", "8"};//结点的标识
+    String nodes[] = {"1", "2", "3", "4", "5", "6", "7", "8"};//结点的标识
     DepthAndBroadFirstSearchGraph graph = new DepthAndBroadFirstSearchGraph(n);
-    for (String label : labels) {
-      graph.insertVertex(label);//插入结点
+    for (String node : nodes) {
+      graph.insertVertex(node);//插入结点
     }
     //插入九条边
     graph.insertEdge(0, 1, 1);

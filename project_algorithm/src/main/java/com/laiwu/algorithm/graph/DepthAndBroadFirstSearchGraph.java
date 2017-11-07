@@ -45,8 +45,8 @@ public class DepthAndBroadFirstSearchGraph {
   }
 
   //插入结点
-  public void insertEdge(int v1, int v2, int weight) {
-    edges[v1][v2] = weight;
+  public void insertEdge(int fromV, int toV, int edgeWeight) {
+    edges[fromV][toV] = edgeWeight;
     numOfEdges++;
   }
 
