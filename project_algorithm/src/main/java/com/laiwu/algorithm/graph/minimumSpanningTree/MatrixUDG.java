@@ -1,7 +1,7 @@
 package com.laiwu.algorithm.graph.minimumSpanningTree;
 
 /**
- * Java: Prime和Kruskal算法生成最小生成树(邻接矩阵)
+ * Java: Prim和Kruskal算法生成最小生成树(邻接矩阵)
  */
 
 import java.io.IOException;
