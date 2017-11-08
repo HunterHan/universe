@@ -4,16 +4,16 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * LinkedHashMap 实现 LRU 算法
+ * LinkedHashMap 实现 FIFO 算法
  * @param <K>
  * @param <V>
  */
-public class LruLinkedHashMap<K, V> extends LinkedHashMap<K, V> {
+public class FIFOLinkedHashMap<K, V> extends LinkedHashMap<K, V> {
 
   private final int MAX_CACHE_SIZE;
 
-  public LruLinkedHashMap(int cacheSize) {
-    super((int) Math.ceil(cacheSize / 0.75) + 1, 0.75f, true);
+  public FIFOLinkedHashMap(int cacheSize) {
+    super((int) Math.ceil(cacheSize / 0.75) + 1, 0.75f, false);
     MAX_CACHE_SIZE = cacheSize;
   }
 

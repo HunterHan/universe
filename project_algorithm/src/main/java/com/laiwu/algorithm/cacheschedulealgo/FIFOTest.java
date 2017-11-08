@@ -3,11 +3,11 @@ package com.laiwu.algorithm.cacheschedulealgo;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class LruTest {
+public class FIFOTest {
 
   public static void main(String[] args) {
 
-    LinkedHashMap<String, String> map = new LruLinkedHashMap<String, String>(16);
+    FIFOLinkedHashMap<String, String> map = new FIFOLinkedHashMap<String, String>(4);
     map.put("a", "a");
     map.put("b", "b");
     map.put("c", "c");
@@ -21,7 +21,6 @@ public class LruTest {
     map.get("d");
 
     System.out.println(map);
-
 
     map.get("a");
 
@@ -39,6 +38,9 @@ public class LruTest {
 
     System.out.println(map);
 
-    map.get("d");
+    map.put("i", "i");
+
+    System.out.println(map);
+
   }
 }
