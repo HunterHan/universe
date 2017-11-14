@@ -1,17 +1,20 @@
 #### 日志分析
 
-    cat 1234.txt |grep "location" | awk -F ':' '{print $2}'|sort| uniq
+>cat 1234.txt |grep "location" | awk -F ':' '{print $2}'|sort| uniq
 
 #### 文件
 
-    1. 查找文件
-    find / -name 'dump.rdb'
+1. 查找文件
+
+    >find / -name 'dump.rdb'
 
 #### 磁盘
 
-    du -sh * 显示当前目录各文件的容量，不包含子文件夹
+1. 显示当前目录各文件的容量，不包含子文件夹
 
-####wget获取整个网站
+    >du -sh
+
+#### wget 获取整个网站
 
     wget -r -p -np -k
 
@@ -60,3 +63,7 @@
 10. -o, –output-file=FILE 
 
     把记录写到FILE文件中
+
+11. --span-hosts
+
+    当递归时转到外部主机
