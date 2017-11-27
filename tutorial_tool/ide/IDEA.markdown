@@ -21,4 +21,6 @@ Local Changes 颜色显示
 #### 关联Beyond Compare
 Preference -> Tools -> Diff & Merge -> External Diff Tools
 
-
+#### UTF-8编码
+Preference -> Tools -> Diff & Merge -> File Encodings
+三个均选择UTF-8

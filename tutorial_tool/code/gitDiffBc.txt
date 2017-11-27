@@ -1,3 +1,5 @@
+sudo ln -s /Applications/Beyond\ Compare.app/Contents/MacOS/bcomp /usr/bin/
+
 [i18n]
 	commitencoding = utf-8
 	logoutputencoding = utf-8
