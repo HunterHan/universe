@@ -24,3 +24,10 @@ Preference -> Tools -> Diff & Merge -> External Diff Tools
 #### UTF-8编码
 Preference -> Tools -> Diff & Merge -> File Encodings
 三个均选择UTF-8
+
+### IDEA Editor Tabs设置
+Preferences→Editor→General→Editor Tabs
+1. unchecked - > show tabs in single row
+2. unchecked - > show 'close' button on editor tabs
+3. checked   - > Mark modified tabs with asterisk
+4. Tab limited - > 10
