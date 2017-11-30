@@ -31,3 +31,6 @@ Preferences→Editor→General→Editor Tabs
 2. unchecked - > show 'close' button on editor tabs
 3. checked   - > Mark modified tabs with asterisk
 4. Tab limited - > 10
+
+#### 正则表达式插件
+安装插件，regexplugin
