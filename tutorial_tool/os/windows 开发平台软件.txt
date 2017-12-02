@@ -1,0 +1,19 @@
+windows 开发平台软件
+
+A类 - 文本类
+1、sublime
+2、notepad++
+
+Windows删除本地服务
+sc delete “服务名” (如果服务名中间有空格，就需要前后加引号)
+
+DeskScapes8  重复使用方法
+1、删除C:\ProgramData\Stardock\DeskScapes下的两个文本文件Cache.dat、License.sig
+
+----文件管理器XYPlorer
+注册信息：
+用户名：www.dayanzai.me
+序列号：xy01-ST00-ffc0-b1f0-7036-0a72-sh11-0923
+
+----下载软件
+EagleGet 
