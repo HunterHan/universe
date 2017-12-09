@@ -19,10 +19,13 @@ git blame v2.6.18.. -- foo
 git blame --since=3.weeks -- foo
 
 ----未在项目初期加入合适的gitignore文件的处理办法
-git rm -r --cached .
-git add .
-git commit
-git push --set-upstream origin universe_develop
+1. 保持项目clean
+2. 修改gitignore文件
+3，git commit
+4. git rm -r --cached .
+5. git add -A
+	git commit -a
+6. git push -f
 
 ----取消某个文件的修改，还原
 git status -sb

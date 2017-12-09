@@ -51,19 +51,24 @@
 7. -nc
 
     不下载已经存在的文件
-    
-8. -nd 
+
+8. -nd
 
     递归下载时不创建一层一层的目录，把所有的文件下载到当前目录
 
-9. -L 
+9. -L
 
     递归时不进入其它主机
 
-10. -o, –output-file=FILE 
+10. -o, –output-file=FILE
 
     把记录写到FILE文件中
 
 11. --span-hosts
 
     当递归时转到外部主机
+
+### 安装youtube-dl
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+youtube-dl https://www.youtube.com/watch?v=IHP4P1BR8ck

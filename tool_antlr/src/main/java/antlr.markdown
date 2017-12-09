@@ -50,7 +50,11 @@ alias grun='java org.antlr.v4.gui.TestRig'
 ```
 antlr4 Hello.g4 -visitor -o out/
 
+cd out/
+
 javac Hello*.java
+
+cd out/
 
 $ grun Hello r -tree
 hello parrt
