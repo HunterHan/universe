@@ -1,10 +1,12 @@
 package com.laiwu.source.code.java.util;
 
+
+import org.junit.Test;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-import org.junit.Test;
 
 public class MyCollections {
 
