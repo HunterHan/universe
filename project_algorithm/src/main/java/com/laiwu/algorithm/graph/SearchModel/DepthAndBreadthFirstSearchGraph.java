@@ -1,4 +1,4 @@
-package com.laiwu.algorithm.graph;
+package com.laiwu.algorithm.graph.SearchModel;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -7,13 +7,13 @@ import java.util.LinkedList;
  * @description 邻接矩阵模型类
  */
 
-public class DepthAndBroadFirstSearchGraph {
+public class DepthAndBreadthFirstSearchGraph {
   private ArrayList vertexList;//存储点的链表
   private int[][] edges;//邻接矩阵，用来存储边
   private int numOfEdges;//边的数目
 
-  public DepthAndBroadFirstSearchGraph(int n) {
-    //初始化矩阵，一维数组，和边的数目
+  public DepthAndBreadthFirstSearchGraph(int n) {
+    //初始化矩阵，二维数组，和边的数目
     edges = new int[n][n];
     vertexList = new ArrayList(n);
     numOfEdges = 0;
@@ -77,7 +77,7 @@ public class DepthAndBroadFirstSearchGraph {
   }
 
   //私有函数，深度优先遍历
-  private void depthFirstSearch(boolean[] isVisited, int i) {
+  private void DFS(boolean[] isVisited, int i) {
     //首先访问该结点，在控制台打印出来
     System.out.print(getValueByIndex(i) + "  ");
     //置该结点为已访问
@@ -86,27 +86,27 @@ public class DepthAndBroadFirstSearchGraph {
     int w = getFirstNeighbor(i);//
     while (w != -1) {
       if (!isVisited[w]) {
-        depthFirstSearch(isVisited, w);
+        DFS(isVisited, w);
       }
       w = getNextNeighbor(i, w);
     }
   }
 
   //对外公开函数，深度优先遍历，与其同名私有函数属于方法重载
-  public void depthFirstSearch() {
+  public void DFS() {
 
     boolean[] isVisited = new boolean[getNumOfVertex()];
 
     for (int i = 0; i < getNumOfVertex(); i++) {
       //因为对于非连通图来说，并不是通过一个结点就一定可以遍历所有结点的。
       if (!isVisited[i]) {
-        depthFirstSearch(isVisited, i);
+        DFS(isVisited, i);
       }
     }
   }
 
   //私有函数，广度优先遍历
-  private void broadFirstSearch(boolean[] isVisited, int i) {
+  private void BFS(boolean[] isVisited, int i) {
     int u, w;
     LinkedList queue = new LinkedList();
 
@@ -134,13 +134,13 @@ public class DepthAndBroadFirstSearchGraph {
   }
 
   //对外公开函数，广度优先遍历
-  public void broadFirstSearch() {
+  public void BFS() {
 
     boolean[] isVisited = new boolean[getNumOfVertex()];
 
     for (int i = 0; i < getNumOfVertex(); i++) {
       if (!isVisited[i]) {
-        broadFirstSearch(isVisited, i);
+        BFS(isVisited, i);
       }
     }
   }
