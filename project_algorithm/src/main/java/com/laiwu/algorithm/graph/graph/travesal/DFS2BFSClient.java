@@ -1,12 +1,12 @@
-package com.laiwu.algorithm.graph.SearchModel;
+package com.laiwu.algorithm.graph.graph.travesal;
 
-public class DepthAndBroadFirstSearchTest {
+public class DFS2BFSClient {
 
   public static void main(String args[]) {
     int vertexCount = 8;
     int edgeCount = 9;
 
-    DepthAndBreadthFirstSearchGraph graph = new DepthAndBreadthFirstSearchGraph(vertexCount);
+    MatrixGraph graph = new MatrixGraph(vertexCount);
     String vertex[] = {"1", "2", "3", "4", "5", "6", "7", "8"};//结点的标识
 
     initGraphVertex(graph, vertex);
@@ -28,7 +28,7 @@ public class DepthAndBroadFirstSearchTest {
     System.out.println("边的个数是：" + graph.getNumOfEdges() / 2);
   }
 
-  private static void initGraphEdge(DepthAndBreadthFirstSearchGraph graph) {
+  private static void initGraphEdge(MatrixGraph graph) {
     graph.insertEdge(0, 1, 1);
     graph.insertEdge(0, 2, 1);
     graph.insertEdge(1, 3, 1);
@@ -50,7 +50,7 @@ public class DepthAndBroadFirstSearchTest {
     graph.insertEdge(6, 5, 1);
   }
 
-  private static void initGraphVertex(DepthAndBreadthFirstSearchGraph graph, String[] vertex) {
+  private static void initGraphVertex(MatrixGraph graph, String[] vertex) {
     for (String node : vertex) {
       graph.insertVertex(node);//插入结点
     }

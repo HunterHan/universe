@@ -1,7 +1,4 @@
-package com.laiwu.algorithm.cacheschedulealgo;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
+package com.laiwu.algorithm.cache.schedule;
 
 public class FIFOTest {
 

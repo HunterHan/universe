@@ -1,4 +1,4 @@
-package com.laiwu.algorithm.graph.SearchModel;
+package com.laiwu.algorithm.graph.graph.travesal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -7,12 +7,12 @@ import java.util.LinkedList;
  * @description 邻接矩阵模型类
  */
 
-public class DepthAndBreadthFirstSearchGraph {
+public class MatrixGraph {
   private ArrayList vertexList;//存储点的链表
   private int[][] edges;//邻接矩阵，用来存储边
   private int numOfEdges;//边的数目
 
-  public DepthAndBreadthFirstSearchGraph(int n) {
+  public MatrixGraph(int n) {
     //初始化矩阵，二维数组，和边的数目
     edges = new int[n][n];
     vertexList = new ArrayList(n);

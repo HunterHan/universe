@@ -1,7 +1,6 @@
-package com.laiwu.algorithm.cacheschedulealgo;
+package com.laiwu.algorithm.cache.schedule;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class LruTest {
 

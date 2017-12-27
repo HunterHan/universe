@@ -1,4 +1,4 @@
-package com.laiwu.algorithm.graph.minimumSpanningTree;
+package com.laiwu.algorithm.graph.minimum.spanning.tree;
 
 /**
  * Java: Prim和Kruskal算法生成最小生成树(邻接矩阵)
@@ -12,7 +12,7 @@ public class MatrixUDG {
   private int mEdgNum;        // 边的数量
   private char[] mVexs;       // 顶点集合
   private int[][] mMatrix;    // 邻接矩阵
-  private static final int INF = Integer.MAX_VALUE;   // 最大值
+  public static final int INF = Integer.MAX_VALUE;   // 最大值
 
   /*
    * 创建图(自己输入数据)
@@ -246,11 +246,11 @@ public class MatrixUDG {
     }
   }
 
-  /*
+  /**
    * prim最小生成树
-   *
+   * <p>
    * 参数说明：
-   *   start -- 从图中的第start个元素开始，生成最小树
+   * start -- 从图中的第start个元素开始，生成最小树
    */
   public void prim(int start) {
     int num = mVexs.length;         // 顶点个数
@@ -417,31 +417,4 @@ public class MatrixUDG {
     }
   }
 
-  ;
-
-
-  public static void main(String[] args) {
-    char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
-    int matrix[][] = {
-                 /*A*//*B*//*C*//*D*//*E*//*F*//*G*/
-          /*A*/ {0, 12, INF, INF, INF, 16, 14},
-          /*B*/ {12, 0, 10, INF, INF, 7, INF},
-          /*C*/ {INF, 10, 0, 3, 5, 6, INF},
-          /*D*/ {INF, INF, 3, 0, 4, INF, INF},
-          /*E*/ {INF, INF, 5, 4, 0, 2, 8},
-          /*F*/ {16, 7, 6, INF, 2, 0, 9},
-          /*G*/ {14, INF, INF, INF, 8, 9, 0}};
-    MatrixUDG pG;
-
-    // 自定义"图"(输入矩阵队列)
-    //pG = new MatrixUDG();
-    // 采用已有的"图"
-    pG = new MatrixUDG(vexs, matrix);
-
-    //pG.print();   // 打印图
-    //pG.DFS();     // 深度优先遍历
-    //pG.BFS();     // 广度优先遍历
-    //pG.prim(0);   // prim算法生成最小生成树
-    pG.kruskal();   // Kruskal算法生成最小生成树
-  }
 }
