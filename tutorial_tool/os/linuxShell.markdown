@@ -1,3 +1,7 @@
+#### 计算字符串长度
+
+> echo “Alex”|awk '{print length($0)}'
+
 #### 日志分析
 
 >cat 1234.txt |grep "location" | awk -F ':' '{print $2}'|sort| uniq
