@@ -54,16 +54,16 @@ public class RSA {
     return keyFactory.generatePublic(x509EncodedKeySpec);
   }
 
-  private static byte[] encryption(Key rsaPrivateKey, String source) throws Exception {
-    cipher.init(Cipher.ENCRYPT_MODE, rsaPrivateKey);
+  private static byte[] encryption(Key rsaKey, String source) throws Exception {
+    cipher.init(Cipher.ENCRYPT_MODE, rsaKey);
     byte[] result = cipher.doFinal(source.getBytes());
     System.out.println("加密后: " + Base64.encodeBase64String(result));
     return result;
   }
 
 
-  private static byte[] decryption(Key rsaPublicKey, byte[] encryptionBytes) throws Exception {
-    cipher.init(Cipher.DECRYPT_MODE, rsaPublicKey);
+  private static byte[] decryption(Key rsaKey, byte[] encryptionBytes) throws Exception {
+    cipher.init(Cipher.DECRYPT_MODE, rsaKey);
     byte[] target = cipher.doFinal(encryptionBytes);
     String decrptStr = new String(target);
     System.out.println("解密后: " + decrptStr);
@@ -90,11 +90,9 @@ public class RSA {
 
     // 公钥加密，私钥解密
     // 1. 公钥加密
-    PublicKey rsaPublicKey2 = getRSAPublicKey(publicKey);
-    byte[] encryptionBytes2 = encryption(rsaPublicKey2, source);
+    byte[] encryptionBytes2 = encryption(rsaPublicKey, source);
     // 2. 私钥解密
-    PrivateKey rsaPrivateKey2 = getRSAPrivateKey(privateKey);
-    byte[] decryption2 = decryption(rsaPrivateKey2, encryptionBytes2);
+    byte[] decryption2 = decryption(rsaPrivateKey, encryptionBytes2);
 
   }
 
