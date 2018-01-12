@@ -31,7 +31,7 @@ public class RSA {
     KeyPairGenerator generator = null;
     KeyPair keyPair = null;
     try {
-      generator = KeyPairGenerator.getInstance("RSA");
+      generator = KeyPairGenerator.getInstance(ALGORITHM);
       SecureRandom random = new SecureRandom();
       // 设置密钥长度，64的整数倍，512 - 65536
       generator.initialize(512, random);
@@ -50,7 +50,7 @@ public class RSA {
 
   private static PublicKey getRSAPublicKey(RSAPublicKey publicKey) throws NoSuchAlgorithmException, InvalidKeySpecException {
     byte[] keyBytes = publicKey.getEncoded();
-    X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(keyBytes);
+    X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(keyBytes); // 某种规范
     return keyFactory.generatePublic(x509EncodedKeySpec);
   }
 
