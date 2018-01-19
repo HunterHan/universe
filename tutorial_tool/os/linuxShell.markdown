@@ -17,7 +17,7 @@
 
 #### 计算字符串长度
 
-> echo “Alex”|awk '{print length($0)}';
+> echo "Alex"|awk '{print length($0)}';
 
 #### 日志分析
 
