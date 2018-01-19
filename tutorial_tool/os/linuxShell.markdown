@@ -1,30 +1,47 @@
+#### grep
+1. 满足任意关键字
+
+    >  grep -E 'string1|string2|string3' 123.txt;
+
+2. 满足所有关键字
+
+    > grep string1 123.txt | grep string2 | grep string3;
+
+3. 排除 1 个关键字
+
+    > grep -v 'string1' 123.txt;
+
+4. 排除多个关键字
+
+    > grep -v 'string1\|string2|string2' 123.txt;
+
 #### 计算字符串长度
 
-> echo “Alex”|awk '{print length($0)}'
+> echo “Alex”|awk '{print length($0)}';
 
 #### 日志分析
 
->cat 1234.txt |grep "location" | awk -F ':' '{print $2}'|sort| uniq
+>cat 1234.txt |grep "location" | awk -F ':' '{print $2}'|sort| uniq;
 
 #### 文件
 
 1. 查找文件
 
-    >find / -name 'dump.rdb'
+    >find / -name 'dump.rdb';
 
 #### 磁盘
 
 1. 显示当前目录各文件的容量，不包含子文件夹
 
-    >du -sh
+    >du -sh;
 
 #### wget 获取整个网站
 
-    wget -r -p -np -k
+    wget -r -p -np -k;
 
-    wget -np -nH -r --span-hosts
+    wget -np -nH -r --span-hosts;
 
-    wget -c -r -np -k -L -p
+    wget -c -r -np -k -L -p;
 
 参数:
 
@@ -72,7 +89,9 @@
 
     当递归时转到外部主机
 
-### 安装youtube-dl
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
-youtube-dl https://www.youtube.com/watch?v=IHP4P1BR8ck
+
+#### 安装youtube-dl
+
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl;
+sudo chmod a+rx /usr/local/bin/youtube-dl;
+youtube-dl https://www.youtube.com/watch?v=IHP4P1BR8ck;
