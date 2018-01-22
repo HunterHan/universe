@@ -1,3 +1,8 @@
+#### 取消IDEA启动后默认打开工程
+Preference  -> Appearance & Behavior>System Settings
+
+去掉默认的勾选Reopen last project on startup（在启动的时候打开上次的项目）
+
 #### 关闭注释中param错误的提示
 
 preferences -> 输入javadoc -> Insections -> 找到Javadoc issues -> Declararion has problems in Javadoc references
