@@ -1,12 +1,12 @@
 # git中换行符的问题
 
-##背景
+## 背景
 
     CR回车 LF换行Windows/Dos CRLF \r\n
     Linux/Unix LF \n
     MacOS CR \r
 
-##问题
+## 问题
 
 git做版本控制，平台不同换行符不同造成了问题，windows换行符为crlf(*windows的\r\n才是无意义的换行*)，linux和MAX OS 换行符是 lf, Windows使用回车和换行两个字符来结束一行，而Mac和Linux只使用换行一个字符。linux和MAX os设置为```core.autocrlf input```（貌似是默认值），windows设置为```core.autocrlf true```。还是遇到换行符的问题, review发现有的commit的变化是所有行都被删除重建。
 
