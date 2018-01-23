@@ -1,5 +1,8 @@
 # universe
 
-Algorithm \ java source code \ tutorial
+* Algorithm 
+* Java source code
+* Tutorial
 
-Step by step
+
+
