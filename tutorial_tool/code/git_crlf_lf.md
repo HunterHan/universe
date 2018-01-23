@@ -16,13 +16,13 @@ git做版本控制，平台不同换行符不同造成了问题，windows换行�
 
 Git 在提交时自动地把行结束符 CRLF 转换成 LF，签出代码时把 LF 转换成 CRLF
 
-    ```git config --global core.autocrlf true```
+    git config --global core.autocrlf true
 
 * Linux & Mac
 
 Git 在提交时把 CRLF 转换成 LF，签出时不转换
 
-    ```git config --global core.autocrlf input```
+    git config --global core.autocrlf input
 
 **最终状态**: 
 ```在Windows系统上的签出文件中保留CRLF，会在Mac和Linux系统上，包括仓库中保留LF```
