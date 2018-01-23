@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
-
 public class MyCollections {
 
   static LinkedList<Integer> linkedList = new LinkedList<Integer>();
