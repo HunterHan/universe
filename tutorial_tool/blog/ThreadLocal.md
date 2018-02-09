@@ -6,8 +6,7 @@
 
 > 每个Thread 维护一个 ThreadLocalMap 映射表，这个映射表的 key 是 ThreadLocal实例本身，value 是真正需要存储的 Object。ThreadLocalMap 使用 ThreadLocal 的弱引用作为 Key ，弱引用的对象在 GC 时会被回收。和HashMap很大的区别是，Entry中没有next字段，所以就不存在链表的情况。
 
-![](media/15166770380634.jpg)
-
+![](../media/15166770380634.jpg)
 
 *ThreadLocal为什么会内存泄漏*
 
