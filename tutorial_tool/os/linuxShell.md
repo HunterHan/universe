@@ -1,3 +1,26 @@
+#### 统计当前文件夹下的文件个数、目录个数
+
+1) 统计当前文件夹下文件的个数
+    
+    ls -l |grep "^-"|wc -l
+
+2) 统计当前文件夹下目录的个数
+
+    ls -l |grep "^d"|wc -l
+    
+3) 统计当前文件夹下文件的个数，包括子文件夹里的 
+
+    ls -lR|grep "^-"|wc -l
+    
+4) 统计文件夹下目录的个数，包括子文件夹里的
+
+    ls -lR|grep "^d"|wc -l
+
+说明:
+   
+    ^-  保留一般文件, 可能是目录、链接、设备文件等
+    ^d  只保留目录
+    
 #### grep
 1. 满足任意关键字
 
@@ -95,3 +118,5 @@
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl;
 sudo chmod a+rx /usr/local/bin/youtube-dl;
 youtube-dl https://www.youtube.com/watch?v=IHP4P1BR8ck;
+
+
