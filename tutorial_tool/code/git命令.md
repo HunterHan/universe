@@ -1,3 +1,11 @@
+>mac 配置 gitk
+    
+    mac 自带低版本的git 不带 gitk 命令，需要手工升级。
+    git update
+    git install git
+    which git
+    brew doctor
+
 >分支重命名
     
     git branch -m 老分支名 新分支名
