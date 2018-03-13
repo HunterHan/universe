@@ -30,6 +30,21 @@
 import pymysql
 pymysql.install_as_MySQLdb()
 
+## yaml 模块
+
+下载yaml的安装包
+
+http://pyyaml.org/wiki/PyYAML
+
+下载，解压 ,安装
+
+tar -zxvf PyYAML-3.12.tar.gz 
+
+cd PyYAML-3.12
+
+python setup.py install
+
+即可
 
 
 
