@@ -46,6 +46,14 @@ python setup.py install
 
 即可
 
+## SQLAlchemy 模块
+
+pip install flask-SQLAlchemy
+
+## 设置Pycharm环境变量
+
+在菜单Edit->Run configurations 中，手动设置Environment variables，添加LD_LIBRARY_PATH的内容，即可解决问题。
+
 
 
     
