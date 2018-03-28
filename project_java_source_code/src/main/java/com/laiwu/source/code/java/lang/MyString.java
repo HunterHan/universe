@@ -1,6 +1,6 @@
 package com.laiwu.source.code.java.lang;
 
-import com.laiwu.common.util.date.SimpleDateFormatUtil;
+import com.laiwu.common.util.SimpleDateFormatUtil;
 
 /**
  * String 的 + 在编译器被优化
