@@ -42,6 +42,18 @@ public class BigDecimalTest {
 
       System.out.println(num5.compareTo(num6));
 
+      // 取值
+
+      BigDecimal num7 = new BigDecimal("1.35");
+      BigDecimal bigDecimal = num7.setScale(1, BigDecimal.ROUND_DOWN);
+      System.out.println(bigDecimal);
+      BigDecimal bigDecimal1 = num7.setScale(1, BigDecimal.ROUND_UP);
+      System.out.println(bigDecimal1);
+      BigDecimal bigDecimal2 = num7.setScale(1, BigDecimal.ROUND_HALF_UP);
+      System.out.println(bigDecimal2);
+      BigDecimal bigDecimal3 = num7.setScale(1, BigDecimal.ROUND_HALF_DOWN);
+      System.out.println(bigDecimal3);
+
 
   }
 
