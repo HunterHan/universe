@@ -3,7 +3,7 @@ package com.laiwu.algorithm.stack;
 import java.io.Serializable;
 import java.util.EmptyStackException;
 
-public class SeqStack<T> implements Stack<T>, Serializable {
+public class ArrayStack<T> implements Stack<T>, Serializable {
 
   private static final long serialVersionUID = -5413303117698554397L;
 
@@ -24,11 +24,11 @@ public class SeqStack<T> implements Stack<T>, Serializable {
 
   private int size;
 
-  public SeqStack(int capacity) {
+  public ArrayStack(int capacity) {
     array = (T[]) new Object[capacity];
   }
 
-  public SeqStack() {
+  public ArrayStack() {
     array = (T[]) new Object[this.capacity];
   }
 
@@ -67,7 +67,7 @@ public class SeqStack<T> implements Stack<T>, Serializable {
   @Override
   public T peek() {
     if (isEmpty())
-      new EmptyStackException();
+      return null;
     return array[top];
   }
 
@@ -102,7 +102,7 @@ public class SeqStack<T> implements Stack<T>, Serializable {
   }
 
   public static void main(String[] args) {
-    SeqStack<String> s = new SeqStack<>();
+    ArrayStack<String> s = new ArrayStack<>();
     s.push("A");
     s.push("B");
     s.push("C");
