@@ -55,13 +55,14 @@ subprojects {
 
     repositories {
        //maven {url 'http://10.10.159.211:8080/nexus/content/groups/public'}
-       //mavenCentral()
+       maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+       mavenCentral()
        jcenter()
     }
     
     configurations {
         // 所有需要忽略的包定义在此
-        all*.exclude group: 'commons-logging'
+        //all*.exclude group: 'commons-logging'
         all*.exclude group: 'org.apache.logging.log4j', module:'log4j-slf4j-impl'
     }
     

@@ -8,18 +8,23 @@ public class LinkedHashMapTest {
 
   public static void main(String[] args) {
 
-    Map<String, Integer> map = new LinkedHashMap<>();
-    map.put("one", 3);
-    map.put("two", 2);
-    map.put("three", 1);
+    Map<String, String> map = new LinkedHashMap<String, String>(16, 0.75f, true);
+    map.put("one", "one");
+    map.put("two", "two");
+    map.put("three", "three");
 
-    Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+
+    Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
 
     while (iterator.hasNext()) {
-      Map.Entry<String, Integer> next = iterator.next();
+      Map.Entry<String, String> next = iterator.next();
       String key = next.getKey();
-      Integer value = next.getValue();
+      String value = next.getValue();
       System.out.println(key + " " + value);
+    }
+
+    for (String value : map.keySet()) {
+      System.out.println(value);
     }
   }
 

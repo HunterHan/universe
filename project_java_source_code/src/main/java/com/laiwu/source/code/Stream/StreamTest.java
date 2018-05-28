@@ -1,8 +1,12 @@
 package com.laiwu.source.code.Stream;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamTest {
 
@@ -16,14 +20,30 @@ public class StreamTest {
 
     innerIterator(list);
 
+    List<String> names = new ArrayList<>();
+    names.add("TaoBao");
+    names.add("ZhiFuBao");
+    List<String> lowercaseNames = names.stream().map((String name) -> {
+      return name.toLowerCase();
+    }).collect(Collectors.toList());
+    System.out.println(lowercaseNames);
+
+    List<Integer> ints = Lists.newArrayList(1,2,3,4,5,6,7,8,9,10);
+    System.out.println("ints sum is:" + ints.stream().reduce((sum, item) -> sum + item).get());
+
+    List<Integer> ints2 = Lists.newArrayList(1,2,3,4,5,6,7,8,9,10);
+    System.out.println(ints2.stream().allMatch(item -> item < 100));
+    ints.stream().max((o1, o2) -> o1.compareTo(o2)).ifPresent(System.out::println);
+
+
   }
 
   private static void innerIterator(List<Student> list) {
     // 返回内部迭代中的相应接口： Stream
     // 这种迭代方式称为内部迭代
     list.stream()
-            .filter(student -> student.getSex().equals("G"))
-            .forEach(student -> System.out.println(student.toString()));
+        .filter(student -> student.getSex().equals("G"))
+        .forEach(student -> System.out.println(student.toString()));
   }
 
   private static void outerIterator(List<Student> list) {

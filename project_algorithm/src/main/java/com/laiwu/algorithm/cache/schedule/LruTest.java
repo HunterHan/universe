@@ -6,7 +6,7 @@ public class LruTest {
 
   public static void main(String[] args) {
 
-    LinkedHashMap<String, String> map = new LruLinkedHashMap<String, String>(16);
+    LinkedHashMap<String, String> map = new LruLinkedHashMap<String, String>(4);
     map.put("a", "a");
     map.put("b", "b");
     map.put("c", "c");

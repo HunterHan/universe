@@ -20,4 +20,6 @@ include 'project_algorithm'
 include 'project_java_source_code'
 include 'project_test'
 include 'project_common'
-include 'tool_antlr'
+include 'antlr'
+include 'dubbo'
+
