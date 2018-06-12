@@ -1,3 +1,11 @@
+#### properties配置文件正常显示
+
+project settings - File Encoding - Transparent native-to-ascii conversion
+
+#### 设置忽略@param注释中的参数与方法中的参数 不一致的 取消错误提示
+
+Editor - Inspections - Java - Javadoc issues - Declaration has problems in Javadoc references 改为 warning 
+
 #### 取消IDEA启动后默认打开工程
 Preference  -> Appearance & Behavior>System Settings
 

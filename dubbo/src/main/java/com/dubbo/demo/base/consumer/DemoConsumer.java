@@ -10,7 +10,7 @@ public class DemoConsumer {
         new String[]{"base/dubbo-demo-consumer.xml"});
     context.start();
     // obtain proxy object for remote invocation
-    DemoServer demoService = (DemoServer) context.getBean("demoService");
+    DemoServer demoService = (DemoServer) context.getBean("demoService222");
     // execute remote invocation
     Integer numA = 1;
     Integer numB = 1;
