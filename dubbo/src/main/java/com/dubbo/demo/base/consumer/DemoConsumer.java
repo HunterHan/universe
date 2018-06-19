@@ -1,6 +1,7 @@
 package com.dubbo.demo.base.consumer;
 
 import com.dubbo.demo.base.provider.DemoServer;
+import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DemoConsumer {
@@ -18,5 +19,13 @@ public class DemoConsumer {
     // show the result
     System.out.println(numA + " + " + numA + " = " + result);
     context.close();
+  }
+
+  @Test
+  public void test(){
+    String str1 = "abc";
+    String str2 = "def";
+    String str3 = str1 + str2;
+    System.out.println(str3 == "abcdef");
   }
 }

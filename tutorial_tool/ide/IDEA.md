@@ -1,3 +1,19 @@
+#### 乱码
+
+1、工程代码乱码
+
+> Settings > Editor > File Encodings > Global Encodings & Project Encodings 设置为：`UTF-8`。
+
+2、main方法运行，控制台乱码
+
+> Settings > Build, Execution, Deployment > Compiler > Java Compiler > Additional command line parameters > 设置为：`-encoding utf-8`
+
+3、tomcat运行，控制台乱码
+
+> Edit Configurations > Tomcat Server > server > VM options > 设置为：`-Dfile.encoding=UTF-8`
+
+> idea > bin > idea.exe.vmoptions或者idea64.exe.vmoptions 配置文件末尾添加：`-Dfile.encoding=UTF-8`
+
 #### properties配置文件正常显示
 
 project settings - File Encoding - Transparent native-to-ascii conversion
