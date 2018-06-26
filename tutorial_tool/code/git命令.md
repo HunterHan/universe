@@ -1,3 +1,20 @@
+### 自动下载source、javadoc
+
+maven：File settings build maven importing，勾选source和javadoc
+
+IDE：
+
+```xml
+apply plugin:'idea'
+
+idea {
+   module {
+      downloadJavadoc = true // defaults to false
+      downloadSources = true
+   }
+}
+```
+
 ### windows git bash免密
 
 **1.1 创建文件存储GIT用户名和密码**
