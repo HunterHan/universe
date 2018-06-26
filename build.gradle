@@ -1,12 +1,21 @@
 task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
+apply plugin:'idea'
+
+idea {
+	module {
+		downloadJavadoc = true // defaults to false
+		downloadSources = true
+	}
+}
+
 // 标记
-subprojects {
+allprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse-wtp' 
     apply plugin: 'maven-publish'
-    
+
 	// apply plugin: 'findbugs'
 	// apply plugin: 'pmd'
 	// apply plugin: 'checkstyle'
@@ -81,7 +90,8 @@ subprojects {
         // 测试依赖
         testCompile(  
             "org.springframework:spring-test:$springframework_version",  
-            "junit:junit:4.12"  
-        ) 
+            "junit:junit:4.12"
+        )
     }
+
 }
