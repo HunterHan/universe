@@ -26,7 +26,7 @@ public class MySimpleDateFormat {
    */
   public static String formatNow() {
     Date now = new Date();
-    SimpleDateFormat formetter = new SimpleDateFormat(DateConstant.DATE_FORMATTER_YYYY_MM_DD_HH_MM_SS);
+    SimpleDateFormat formetter = new SimpleDateFormat(DateConstant.YYYY_MM_DD_HH_MM_SS);
     String nowStr = formetter.format(now);
     return nowStr;
   }
