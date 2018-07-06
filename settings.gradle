@@ -22,4 +22,4 @@ include 'project_test'
 include 'project_common'
 include 'antlr'
 include 'dubbo'
-
+include 'project_dev'

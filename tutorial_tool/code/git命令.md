@@ -1,3 +1,15 @@
+### 用户名、密码
+
+查看用户名和邮箱地址：
+
+$ git config user.name
+$ git config user.email
+
+修改用户名和邮箱地址：
+
+$ git config --global user.name "username"
+$ git config --global user.email "email"
+
 ### 自动下载source、javadoc
 
 maven：File settings build maven importing，勾选source和javadoc

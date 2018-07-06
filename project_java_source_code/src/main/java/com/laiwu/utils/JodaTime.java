@@ -1,6 +1,5 @@
 package com.laiwu.utils;
 
-import com.google.common.collect.Lists;
 import com.laiwu.common.constant.DateConstant;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -10,13 +9,13 @@ import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 public class JodaTime {
 
   @Test
   public void test() {
+
     DateTime time = new DateTime();
     System.out.println(time.toString(DateConstant.YYYY_MM_DD_HH_MM_SS_sss));
 
@@ -185,4 +184,13 @@ public class JodaTime {
     System.out.println("java.util.Calendar：" + calendar2);
   }
 
+  @Test
+  public void test2() {
+    Date date = new Date();
+    String format = "yyMMdp";
+    DateTime dateTime = new DateTime(date);
+
+    final String string1 = dateTime.toString(format);
+    System.out.println(string1);
+  }
 }
