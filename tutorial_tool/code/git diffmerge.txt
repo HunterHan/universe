@@ -1,0 +1,35 @@
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[gui]
+	encoding = utf-8
+	recentrepo = D:/data/code/universe
+
+#使用beyond compare来查看文件差异
+[diff]
+#对比工具名称,必须与difftool项里的名称保持一致
+tool = dm
+[difftool "dm"]
+#beyond compare路径和调用命令
+#$REMOTE 表示commit之后的文件
+#LOCAL 表示commit到git的文件
+cmd = "\"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$REMOTE\""
+#合并分支
+[merge]
+#对比工具名称,必须与mergetool项里的名称保持一致
+tool = dm
+[mergetool]
+prompt = false
+[mergetool "dm"]
+#beyond compare路径和调用命令
+cmd = "\"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[user]
+	email = 784622876@qq.com
+	name = hanhongtao
+[core]
+	autocrlf = true
+# git 命令别名
+[alias]
+	log1 = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'
+	log2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	status1 = status -sb

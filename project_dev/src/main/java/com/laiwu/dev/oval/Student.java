@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import net.sf.oval.constraint.*;
+import org.apache.commons.lang.StringUtils;
 
 @Setter
 @Getter
