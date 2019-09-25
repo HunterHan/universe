@@ -16,7 +16,8 @@
 |[seata](https://github.com/seata/seata)||Seata is an easy-to-use, high-performance, open source distributed transaction solution.||
 | [tx-lcn](https://github.com/codingapi/tx-lcn) | ✪✪✪✪   | LCN distributed transaction framework, compatible with dubbo, spring cloud and Motan framework, supports various relational databases | 分布式事务框架 |
 | [xxl-job](https://github.com/xuxueli/xxl-job) |        | A lightweight distributed task scheduling framework.（分布式任务调度平台XXL-JOB） | 分布式任务调度 |
-| [nebula](https://github.com/vesoft-inc/nebula) | | A high performance distributed Graph Database |  |
+| [nebula](https://github.com/vesoft-inc/nebula) | | A high performance distributed Graph Database | 图数据库 |
+|[hugegraph](https://github.com/hugegraph/hugegraph)||HugeGraph Database core component, including graph engine, API, and built-in backends||
 | [incubator-shardingsphere](https://github.com/apache/incubator-shardingsphere) | | Distributed database middleware | 分布式数据库中间件 |
 | [qmq](https://github.com/qunarcorp/qmq) | | QMQ是去哪儿网内部广泛使用的消息中间件，自2012年诞生以来在去哪儿网所有业务场景中广泛的应用，包括跟交易息息相关的订单场景； 也包括报价搜索等高吞吐量场景。 | 消息中间件 |
 
