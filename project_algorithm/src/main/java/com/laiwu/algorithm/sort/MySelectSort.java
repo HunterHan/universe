@@ -41,4 +41,12 @@ public class MySelectSort {
     }
     return target;
   }
+
+  public static void main(String[] args) {
+
+    int[] target = {5, 4, 3, 2, 3};
+    target = selectSort(target);
+
+  }
+
 }

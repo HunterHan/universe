@@ -92,6 +92,8 @@ allprojects {
             "org.springframework:spring-test:$springframework_version",  
             "junit:junit:4.12"
         )
-    }
+		implementation 'junit:junit:4.12'
+		implementation 'junit:junit:4.12'
+	}
 
 }
